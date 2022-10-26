@@ -109,6 +109,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.nba_env
+nba_env/
+nba_env.bak/
 
 # Spyder project settings
 .spyderproject
