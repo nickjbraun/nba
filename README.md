@@ -12,12 +12,17 @@ conda update conda
 conda search "^python$"
 
 # create virtual environment
-conda create -n nba_env python=3.10 anaconda
-
-# activate virtual environment, make sure in the NBA root directory
-source activate nba_env
+conda create -n nba_env python=3.9.7 anaconda
+conda activate nba_env
 conda install pip
 pip3 install -r requirements.txt
+
+# activate virtual environment, make sure in the NBA root directory
+
+
+
+
+
 
 
 
@@ -38,7 +43,8 @@ source nba_env/bin/activate
 
 # to see list of all environments
 conda info -e
+conda env list
 # to deactivate
-source deactivate
+conda deactivate
 # to delete a no longer needed environment
-conda remove -n yourenvname -all
+conda env remove -n nba_env
